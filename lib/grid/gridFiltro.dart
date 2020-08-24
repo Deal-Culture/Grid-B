@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Modal modal = new Modal();
+Modal modal2 = new Modal();
 
 class Modal {
   mainBottomSheet(BuildContext context) {
@@ -13,15 +13,15 @@ class Modal {
               padding: EdgeInsets.all(0),
               children: <Widget>[
                 _createTile(
-                    context, 'Huertos y puntos verde', Icons.place, _action1),
+                    context, 'Huertos y puntos verde', Icons.place, _huertos),
                 _createTile(context, 'Tiendas y ferias de productos organicos',
-                    Icons.store, _action2),
+                    Icons.store, _markets),
                 _createTile(context, 'Eventos y actividades recreativas',
-                    Icons.local_activity, _action3),
+                    Icons.local_activity, _events),
                 _createTile(context, 'Centro holisticos y terapeutico',
-                    Icons.local_pharmacy, _action4),
+                    Icons.local_pharmacy, _healths),
                 _createTile(context, 'Activismo y voluntariado',
-                    Icons.person_pin, _action5),
+                    Icons.person_pin, _voluntary),
               ],
             ),
           );
@@ -40,23 +40,23 @@ class Modal {
     );
   }
 
-  _action1() {
+  _huertos() {
     print('action 1');
   }
 
-  _action2() {
+  _markets() {
     print('action 2');
   }
 
-  _action3() {
+  _events() {
     print('action 3');
   }
 
-  _action4() {
+  _healths() {
     print('action 3');
   }
 
-  _action5() {
+  _voluntary() {
     print('action 3');
   }
 }

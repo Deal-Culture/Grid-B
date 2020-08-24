@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import './componentes/MyDrawer.dart';
 
+import './componentes/MyDrawer.dart';
+import './grid/gridDate.dart';
 import './grid/gridFiltro.dart';
 
 class Grid extends StatelessWidget {
@@ -10,16 +11,20 @@ class Grid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text(title)),
-        body: Center(child: Text('Maup')),
+        body: Center(child: Text('Mapa')),
         bottomNavigationBar: BottomAppBar(
           child: Row(
             children: [
-              IconButton(icon: Icon(Icons.date_range), onPressed: () {}),
+              IconButton(
+                  icon: Icon(Icons.date_range),
+                  onPressed: () {
+                    modal1.mainBottomSheet(context);
+                  }),
               Spacer(),
               IconButton(
                   icon: Icon(Icons.filter_list),
                   onPressed: () {
-                    modal.mainBottomSheet(context);
+                    modal2.mainBottomSheet(context);
                   }),
             ],
           ),
