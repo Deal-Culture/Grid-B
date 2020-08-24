@@ -41,8 +41,9 @@ ThemeData _titulos() {
     colorScheme: _shrineColorScheme,
     accentColor: teal,
     primaryColor: blanco,
+    canvasColor: blanco,
     buttonColor: tealOscuro,
-    scaffoldBackgroundColor: Colors.teal[100],
+    scaffoldBackgroundColor: tealBlanco,
     cardColor: teal,
     textSelectionColor: tealBlanco,
     errorColor: errorColor,
@@ -50,19 +51,23 @@ ThemeData _titulos() {
       colorScheme: _shrineColorScheme,
       textTheme: ButtonTextTheme.normal,
     ),
-    primaryIconTheme: _customIconTheme(base.iconTheme),
-    iconTheme: _customIconTheme(base.iconTheme),
-    primaryTextTheme: _customTextTheme(base.primaryTextTheme),
-    textTheme: _customTextTheme(base.textTheme),
-    accentTextTheme: _customTextTheme(base.accentTextTheme),
+    primaryIconTheme: _customIconTheme1(base.iconTheme),
+    iconTheme: _customIconTheme2(base.iconTheme),
+    primaryTextTheme: _customTextTheme1(base.primaryTextTheme),
+    textTheme: _customTextTheme2(base.textTheme),
+    accentTextTheme: _customTextTheme3(base.accentTextTheme),
   );
 }
 
-IconThemeData _customIconTheme(IconThemeData original) {
+IconThemeData _customIconTheme1(IconThemeData original) {
   return original.copyWith(color: teal);
 }
 
-TextTheme _customTextTheme(TextTheme base) {
+IconThemeData _customIconTheme2(IconThemeData original) {
+  return original.copyWith(color: teal);
+}
+
+TextTheme _customTextTheme1(TextTheme base) {
   return base
       .copyWith(
         caption: base.caption.copyWith(
@@ -83,20 +88,62 @@ TextTheme _customTextTheme(TextTheme base) {
       );
 }
 
+TextTheme _customTextTheme2(TextTheme base) {
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: tealClaro,
+        bodyColor: tealClaro,
+      );
+}
+
+TextTheme _customTextTheme3(TextTheme base) {
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: tealOscuro,
+        bodyColor: tealOscuro,
+      );
+}
+
 const ColorScheme _shrineColorScheme = ColorScheme(
   primary: blanco,
   primaryVariant: teal,
   secondary: tealBlanco,
-  secondaryVariant: teal,
-  surface: shrineSurfaceWhite,
-  background: backgroundWhite,
+  secondaryVariant: tealOscuro,
+  surface: tealOscuro,
+  background: tealOscuro,
   error: errorColor,
   onPrimary: teal,
   onSecondary: teal,
   onSurface: teal,
   onBackground: teal,
-  onError: shrineSurfaceWhite,
-  brightness: Brightness.light,
+  onError: plomo,
+  brightness: Brightness.dark,
 );
 
 const defaultLetterSpacing = 0.03;
