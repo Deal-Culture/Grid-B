@@ -7,20 +7,23 @@ class Modal {
     showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
-          return Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              _createTile(
-                  context, 'Huertos y puntos verde', Icons.place, _action1),
-              _createTile(context, 'Tiendas y ferias de productos organicos',
-                  Icons.store, _action2),
-              _createTile(context, 'Eventos y actividades recreativas',
-                  Icons.local_activity, _action3),
-              _createTile(context, 'Centro holisticos y terapeutico',
-                  Icons.local_pharmacy, _action4),
-              _createTile(context, 'Activismo y voluntariado', Icons.person_pin,
-                  _action5),
-            ],
+          return Container(
+            height: 280,
+            child: ListView(
+              padding: EdgeInsets.all(0),
+              children: <Widget>[
+                _createTile(
+                    context, 'Huertos y puntos verde', Icons.place, _action1),
+                _createTile(context, 'Tiendas y ferias de productos organicos',
+                    Icons.store, _action2),
+                _createTile(context, 'Eventos y actividades recreativas',
+                    Icons.local_activity, _action3),
+                _createTile(context, 'Centro holisticos y terapeutico',
+                    Icons.local_pharmacy, _action4),
+                _createTile(context, 'Activismo y voluntariado',
+                    Icons.person_pin, _action5),
+              ],
+            ),
           );
         });
   }

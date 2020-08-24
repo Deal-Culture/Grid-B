@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './componentes/MyDrawer.dart';
 
-import './gridFiltro.dart';
+import './grid/gridFiltro.dart';
 
 class Grid extends StatelessWidget {
   final String title;
