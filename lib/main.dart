@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './MyDrawer.dart';
-import './colors.dart';
+import './componentes/MyDrawer.dart';
+import './componentes/colors.dart';
 
 import './GESTIONAGRICOLA.dart';
 import './COMUNIDAD.dart';
