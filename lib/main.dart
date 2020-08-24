@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './MyDrawer.dart';
-import './colors.dart';
+import './componentes/MyDrawer.dart';
+import './componentes/colors.dart';
 
 import './GESTIONAGRICOLA.dart';
 import './COMUNIDAD.dart';
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             ),
         '/6': (BuildContext context) => Notificaciones(title: 'NOTIFICACIONES'),
         '/7': (BuildContext context) => Guardados(title: 'GUARDADOS'),
-        '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACION'),
+        '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACIÓN'),
       },
     );
   }
