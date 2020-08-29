@@ -1,10 +1,12 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import './componentes/MyDrawer.dart';
 import './componentes/colors.dart';
 
 import './GESTIONAGRICOLA.dart';
 import './COMUNIDAD.dart';
-
+import './barter.dart';
 import './grid.dart';
 
 void main() => runApp(MyApp());
@@ -82,7 +84,7 @@ TextTheme _customTextTheme1(TextTheme base) {
         ),
       )
       .apply(
-        fontFamily: 'Rubik',
+        fontFamily: 'Roboto',
         displayColor: teal,
         bodyColor: teal,
       );
@@ -103,7 +105,7 @@ TextTheme _customTextTheme2(TextTheme base) {
         ),
       )
       .apply(
-        fontFamily: 'Rubik',
+        fontFamily: 'Roboto',
         displayColor: tealClaro,
         bodyColor: tealClaro,
       );
@@ -124,7 +126,7 @@ TextTheme _customTextTheme3(TextTheme base) {
         ),
       )
       .apply(
-        fontFamily: 'Rubik',
+        fontFamily: 'Roboto',
         displayColor: tealOscuro,
         bodyColor: tealOscuro,
       );
@@ -156,18 +158,6 @@ class Comunidad extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text(title)),
         body: Center(child: Text('dosss!')),
-        drawer: MyDrawer());
-  }
-}
-
-class Barter extends StatelessWidget {
-  final String title;
-  Barter({Key key, this.title}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(title: Text(title)),
-        body: Center(child: Text('tresssss!')),
         drawer: MyDrawer());
   }
 }

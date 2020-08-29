@@ -54,7 +54,7 @@ class GESTIONAGRICOLA extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Barter(
+                  pageBuilder: () => Comunidad(
                     title: 'PR',
                   ),
                 ),
