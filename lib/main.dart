@@ -22,20 +22,22 @@ class MyApp extends StatelessWidget {
       theme: _titulos(),
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
-        '/2': (context) => Grid(title: 'GRID'),
-        '/1': (context) => COMUNIDAD(title: 'COMUNIDAD'),
-        '/3': (context) => Barter(title: 'BARTER'),
-        '/4': (context) => Chat(title: 'CHAT'),
+        '/2': (context) => Grid(title: 'Grid'),
+        '/1': (context) => COMUNIDAD(title: 'Comunidad'),
+        '/3': (context) => Barter(title: 'Barter'),
+        '/4': (context) => Chat(title: 'Chat'),
         '/5': (context) => GESTIONAGRICOLA(
-              title: 'GESTION AGRICOLA',
+              title: 'Gestion Agricola',
             ),
-        '/6': (BuildContext context) => Notificaciones(title: 'NOTIFICACIONES'),
-        '/7': (BuildContext context) => Guardados(title: 'GUARDADOS'),
-        '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACIÓN'),
+        '/6': (BuildContext context) => Notificaciones(title: 'Notificaciones'),
+        '/7': (BuildContext context) => Guardados(title: 'Guardados'),
+        '/8': (BuildContext context) => Configuracion(title: 'Configuración'),
       },
     );
   }
 }
+
+///TEMA
 
 ThemeData _titulos() {
   final ThemeData base = ThemeData.light();
@@ -150,6 +152,8 @@ const ColorScheme _shrineColorScheme = ColorScheme(
 
 const defaultLetterSpacing = 0.03;
 
+//PAGuINAS
+
 class Comunidad extends StatelessWidget {
   final String title;
   Comunidad({Key key, this.title}) : super(key: key);
@@ -215,32 +219,50 @@ class Guardados extends StatelessWidget {
           children: <Widget>[
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text("He'd have you all unravel at the"),
               color: Colors.teal[600],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Heed not the rabble'),
               color: Colors.teal[600],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Sound of screams but the'),
-              color: Colors.teal[300],
+              color: Colors.teal[600],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Who scream'),
-              color: Colors.teal[400],
+              color: Colors.teal[600],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Revolution is coming...'),
-              color: Colors.teal[500],
+              color: Colors.teal[600],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Revolution, they...'),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
               color: Colors.teal[600],
             ),
           ],
