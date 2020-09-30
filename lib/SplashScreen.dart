@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grid_b/InitialPage.dart';
 import 'dart:async';
 
-import 'package:shimmer/shimmer.dart';
 import 'componentes/colors.dart';
 
 class SpalashScreen extends StatefulWidget {
@@ -15,33 +15,12 @@ class _SpalashScreenState extends State<SpalashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: tealOscuro,
         alignment: Alignment.center,
         child: Stack(fit: StackFit.expand, children: <Widget>[
-          Image.asset(
-            'assets/images/marco_plantas.png',
-            fit: BoxFit.fill,
-          ),
-          Shimmer.fromColors(
-            baseColor: tealClaro,
-            highlightColor: tealOscuro,
-            child: Container(
-              padding: EdgeInsets.all(16.0),
-              child: Center(
-                child: Text(
-                  "GRID-B",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 90.0,
-                      fontFamily: 'Roboto',
-                      shadows: <Shadow>[
-                        Shadow(
-                            blurRadius: 18.0,
-                            color: errorColor,
-                            offset: Offset.fromDirection(120, 12))
-                      ]),
-                ),
-              ),
-            ),
+          SvgPicture.asset(
+            'assets/images/splash.svg',
+            fit: BoxFit.none,
           ),
         ]),
       ),
@@ -49,7 +28,7 @@ class _SpalashScreenState extends State<SpalashScreen> {
   }
 
   Future<bool> _mockCheckForSession() async {
-    await Future.delayed(Duration(seconds: 5), () {});
+    await Future.delayed(Duration(seconds: 4), () {});
 
     return true;
   }
