@@ -81,7 +81,7 @@ class MyDrawer extends StatelessWidget {
                   color: tealClaro,
                 ),
                 title: Text(
-                  'Gestion Agricola',
+                  'Gestión Agrícola',
                   style:
                       TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
                 ),
