@@ -22,16 +22,6 @@ class MyApp extends StatelessWidget {
       theme: _titulos(),
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
-<<<<<<< HEAD
-        '/2': (context) => Grid(title: 'GRID'),
-        '/1': (context) => COMUNIDAD(title: 'COMUNIDAD'),
-        '/3': (context) => Barter(title: 'BARTER'),
-        '/4': (context) => Chat(title: 'CHAT'),
-        '/5': (context) => GESTIONAGRICOLA(title: 'GESTION AGRICOLA'),
-        '/6': (BuildContext context) => Notificaciones(title: 'NOTIFICACIONES'),
-        '/7': (BuildContext context) => Guardados(title: 'GUARDADOS'),
-        '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACIÓN'),
-=======
         '/2': (context) => Grid(title: 'Grid'),
         '/1': (context) => COMUNIDAD(title: 'Comunidad'),
         '/3': (context) => Barter(title: 'Barter'),
@@ -42,7 +32,6 @@ class MyApp extends StatelessWidget {
         '/6': (BuildContext context) => Notificaciones(title: 'Notificaciones'),
         '/7': (BuildContext context) => Guardados(title: 'Guardados'),
         '/8': (BuildContext context) => Configuracion(title: 'Configuración'),
->>>>>>> c2ac6a513c436dae816a6eca6b86871d2927a76b
       },
     );
   }
