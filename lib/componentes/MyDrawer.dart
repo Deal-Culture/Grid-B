@@ -12,14 +12,23 @@ class MyDrawer extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Text('Drawer Header'),
+                child: Text('Drawer Header',
+                    style: TextStyle(
+                        fontFamily: 'Jura', fontSize: 17, color: blanco)),
                 decoration: BoxDecoration(
-                  color: tealClaro,
+                  color: teal,
                 ),
               ),
               ListTile(
-                leading: Icon(Icons.people),
-                title: Text('COMUNIDAD'),
+                leading: Icon(
+                  Icons.people,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Comunidad',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/1');
                 },
@@ -27,50 +36,97 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.map,
+                  color: tealClaro,
                 ),
-                title: Text('GRID'),
+                title: Text(
+                  'Grid',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/2');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.swap_horiz),
-                title: Text('BARTER'),
+                leading: Icon(
+                  Icons.swap_horiz,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Barter',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/3');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.chat_bubble),
-                title: Text('CHAT'),
+                leading: Icon(
+                  Icons.chat_bubble,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Chat',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/4');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.local_florist),
-                title: Text('GESTION DE PLANTAS'),
+                leading: Icon(
+                  Icons.local_florist,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Gestion Agricola',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/5');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.notifications),
-                title: Text('NOTIFICACIONES'),
+                leading: Icon(
+                  Icons.notifications,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Notificaciones',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/6');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.bookmark),
-                title: Text('GUARDADOS'),
+                leading: Icon(
+                  Icons.bookmark,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Guardados',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/7');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.settings),
-                title: Text('CONFIGURACION'),
+                leading: Icon(
+                  Icons.settings,
+                  color: tealClaro,
+                ),
+                title: Text(
+                  'Configuración',
+                  style:
+                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                ),
                 onTap: () {
                   Navigator.pushNamed(context, '/8');
                 },

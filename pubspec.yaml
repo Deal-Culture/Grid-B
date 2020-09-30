@@ -27,6 +27,7 @@ environment:
 
 dependencies:
   flutter_svg: ^0.18.1
+
   adobe_xd: ^1.0.0+1
   flutter_map: any
   shimmer: ^1.1.1
@@ -82,6 +83,13 @@ flutter:
   fonts: 
     - family: Roboto
       fonts: 
-        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+    - family: Jura
+      fonts:
+        - asset: assets/fonts/Jura-Bold.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

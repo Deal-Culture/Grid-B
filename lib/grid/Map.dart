@@ -14,13 +14,10 @@ class Map extends StatelessWidget {
         zoom: 13,
       ),
       layers: [
-        new TileLayerOptions(
-            urlTemplate:
-                "https://api.mapbox.com/styles/v1/bolisteward/ckfog854k02oj19ostjfobbll/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYm9saXN0ZXdhcmQiLCJhIjoiY2s2cWt3Nzd1MDU3bzNubnhuMTVvZ2V4byJ9.eEIhIfJhx1h94elCm-pKYA",
-            additionalOptions: {
-              'accessToken': map_key,
-              'id': 'mapbox.streets',
-            }),
+        new TileLayerOptions(urlTemplate: my_url, additionalOptions: {
+          'accessToken': map_key,
+          'id': my_id,
+        }),
         new MarkerLayerOptions(
           markers: [
             new Marker(

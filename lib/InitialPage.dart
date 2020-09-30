@@ -39,9 +39,10 @@ class InitialPage extends StatelessWidget {
 ThemeData _titulos() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
-    colorScheme: _shrineColorScheme,
+    colorScheme: _dealColorScheme,
     accentColor: teal,
     primaryColor: blanco,
+    secondaryHeaderColor: tealOscuro,
     canvasColor: blanco,
     buttonColor: tealOscuro,
     scaffoldBackgroundColor: tealBlanco,
@@ -49,7 +50,7 @@ ThemeData _titulos() {
     textSelectionColor: tealBlanco,
     errorColor: errorColor,
     buttonTheme: const ButtonThemeData(
-      colorScheme: _shrineColorScheme,
+      colorScheme: _dealColorScheme,
       textTheme: ButtonTextTheme.normal,
     ),
     primaryIconTheme: _customIconTheme1(base.iconTheme),
@@ -83,7 +84,7 @@ TextTheme _customTextTheme1(TextTheme base) {
         ),
       )
       .apply(
-        fontFamily: 'Roboto',
+        fontFamily: 'Jura',
         displayColor: teal,
         bodyColor: teal,
       );
@@ -104,7 +105,7 @@ TextTheme _customTextTheme2(TextTheme base) {
         ),
       )
       .apply(
-        fontFamily: 'Roboto',
+        fontFamily: 'Sans',
         displayColor: tealClaro,
         bodyColor: tealClaro,
       );
@@ -131,7 +132,7 @@ TextTheme _customTextTheme3(TextTheme base) {
       );
 }
 
-const ColorScheme _shrineColorScheme = ColorScheme(
+const ColorScheme _dealColorScheme = ColorScheme(
   primary: blanco,
   primaryVariant: teal,
   secondary: tealBlanco,
