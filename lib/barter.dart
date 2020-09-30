@@ -21,17 +21,17 @@ class Barter extends StatelessWidget {
                       Icons.account_circle,
                       size: 48,
                     ),
-                    title: const Text('Card title 1',
+                    title: const Text('Carsdfdsfdsfd title 1',
                         style: TextStyle(color: teal)),
                     subtitle: Text(
-                      'Secondary Text',
+                      'Secondfsdfsdary Text',
                       style: TextStyle(color: tealOscuro),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
-                      'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                      'Greyhound divisively hello colsdfsdly wonderfully marginally far upon excluding.',
                       style: TextStyle(color: Colors.black.withOpacity(0.6)),
                     ),
                   ),
