@@ -26,9 +26,7 @@ class MyApp extends StatelessWidget {
         '/1': (context) => COMUNIDAD(title: 'COMUNIDAD'),
         '/3': (context) => Barter(title: 'BARTER'),
         '/4': (context) => Chat(title: 'CHAT'),
-        '/5': (context) => GESTIONAGRICOLA(
-              title: 'GESTION AGRICOLA',
-            ),
+        '/5': (context) => GESTIONAGRICOLA(title: 'GESTION AGRICOLA'),
         '/6': (BuildContext context) => Notificaciones(title: 'NOTIFICACIONES'),
         '/7': (BuildContext context) => Guardados(title: 'GUARDADOS'),
         '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACIÓN'),

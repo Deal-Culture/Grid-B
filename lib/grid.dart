@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './componentes/MyDrawer.dart';
 import './grid/gridDate.dart';
 import './grid/gridFiltro.dart';
+import './grid/Map.dart';
 
 class Grid extends StatelessWidget {
   final String title;
@@ -11,7 +12,7 @@ class Grid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text(title)),
-        body: Center(child: Text('Mapa')),
+        body: Map(),
         bottomNavigationBar: BottomAppBar(
           child: Row(
             children: [
