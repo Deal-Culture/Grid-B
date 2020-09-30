@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       theme: _titulos(),
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
+<<<<<<< HEAD
         '/2': (context) => Grid(title: 'GRID'),
         '/1': (context) => COMUNIDAD(title: 'COMUNIDAD'),
         '/3': (context) => Barter(title: 'BARTER'),
@@ -30,10 +31,24 @@ class MyApp extends StatelessWidget {
         '/6': (BuildContext context) => Notificaciones(title: 'NOTIFICACIONES'),
         '/7': (BuildContext context) => Guardados(title: 'GUARDADOS'),
         '/8': (BuildContext context) => Configuracion(title: 'CONFIGURACIÓN'),
+=======
+        '/2': (context) => Grid(title: 'Grid'),
+        '/1': (context) => COMUNIDAD(title: 'Comunidad'),
+        '/3': (context) => Barter(title: 'Barter'),
+        '/4': (context) => Chat(title: 'Chat'),
+        '/5': (context) => GESTIONAGRICOLA(
+              title: 'Gestion Agricola',
+            ),
+        '/6': (BuildContext context) => Notificaciones(title: 'Notificaciones'),
+        '/7': (BuildContext context) => Guardados(title: 'Guardados'),
+        '/8': (BuildContext context) => Configuracion(title: 'Configuración'),
+>>>>>>> c2ac6a513c436dae816a6eca6b86871d2927a76b
       },
     );
   }
 }
+
+///TEMA
 
 ThemeData _titulos() {
   final ThemeData base = ThemeData.light();
@@ -148,6 +163,8 @@ const ColorScheme _shrineColorScheme = ColorScheme(
 
 const defaultLetterSpacing = 0.03;
 
+//PAGuINAS
+
 class Comunidad extends StatelessWidget {
   final String title;
   Comunidad({Key key, this.title}) : super(key: key);
@@ -203,7 +220,64 @@ class Guardados extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text(title)),
-        body: Center(child: Text('dosss!')),
+        body: Center(
+            child: GridView.count(
+          primary: false,
+          padding: const EdgeInsets.all(10),
+          crossAxisSpacing: 5,
+          mainAxisSpacing: 5,
+          crossAxisCount: 2,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.teal[600],
+            ),
+          ],
+        )),
         drawer: MyDrawer());
   }
 }
