@@ -55,7 +55,7 @@ class GESTIONAGRICOLA extends StatelessWidget {
                   ease: Curves.easeOut,
                   duration: 0.3,
                   pageBuilder: () => Comunidad(
-                    title: 'PR',
+                    title: 'PffgfdsdsR',
                   ),
                 ),
               ],
