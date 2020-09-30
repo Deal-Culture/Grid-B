@@ -1,6 +1,6 @@
 # grid_b
 
-A new Flutter project.
+A new Flutter project of share-economy.
 
 ## Getting Started
 
