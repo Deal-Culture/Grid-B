@@ -5,7 +5,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: tealOscuro,
+        color: AppColor.tealOscuro,
         child: Drawer(
           child: ListView(
             // Important: Remove any padding from the ListView.
@@ -14,20 +14,22 @@ class MyDrawer extends StatelessWidget {
               DrawerHeader(
                 child: Text('Drawer',
                     style: TextStyle(
-                        fontFamily: 'Jura', fontSize: 17, color: blanco)),
+                        fontFamily: 'Jura',
+                        fontSize: 17,
+                        color: AppColor.blanco)),
                 decoration: BoxDecoration(
-                  color: teal,
+                  color: AppColor.teal,
                 ),
               ),
               ListTile(
                 leading: Icon(
                   Icons.people,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Comunidad',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/1');
@@ -36,12 +38,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.map,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Grid',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/2');
@@ -50,12 +52,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.swap_horiz,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Barter',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/3');
@@ -64,12 +66,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.chat_bubble,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Chat',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/4');
@@ -78,12 +80,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.local_florist,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Gestión Agrícola',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/5');
@@ -92,12 +94,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.notifications,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Notificaciones',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/6');
@@ -106,12 +108,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.bookmark,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Guardados',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/7');
@@ -120,12 +122,12 @@ class MyDrawer extends StatelessWidget {
               ListTile(
                 leading: Icon(
                   Icons.settings,
-                  color: tealClaro,
+                  color: AppColor.tealClaro,
                 ),
                 title: Text(
                   'Configuración',
-                  style:
-                      TextStyle(fontFamily: 'Jura', fontSize: 17, color: teal),
+                  style: TextStyle(
+                      fontFamily: 'Jura', fontSize: 17, color: AppColor.teal),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/8');

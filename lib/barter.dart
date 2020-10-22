@@ -12,7 +12,7 @@ class Barter extends StatelessWidget {
         body: ListView(
           children: [
             Card(
-              color: plomo,
+              color: AppColor.plomo,
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: [
@@ -22,10 +22,10 @@ class Barter extends StatelessWidget {
                       size: 48,
                     ),
                     title: const Text('Carsdfdsfdsfd title 1',
-                        style: TextStyle(color: teal)),
+                        style: TextStyle(color: AppColor.teal)),
                     subtitle: Text(
                       'Secondfsdfsdary Text',
-                      style: TextStyle(color: tealOscuro),
+                      style: TextStyle(color: AppColor.tealOscuro),
                     ),
                   ),
                   Padding(
@@ -39,7 +39,7 @@ class Barter extends StatelessWidget {
                     alignment: MainAxisAlignment.end,
                     children: [
                       FlatButton(
-                        textColor: teal,
+                        textColor: AppColor.teal,
                         onPressed: () {
                           // Perform some action
                         },
@@ -52,7 +52,7 @@ class Barter extends StatelessWidget {
               ),
             ),
             Card(
-              color: plomo,
+              color: AppColor.plomo,
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: [
@@ -60,7 +60,7 @@ class Barter extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 2.0),
                     child: Text(
                       'Titulo',
-                      style: TextStyle(color: tealClaro, fontSize: 18),
+                      style: TextStyle(color: AppColor.tealClaro, fontSize: 18),
                     ),
                   ),
                   Padding(
@@ -68,14 +68,14 @@ class Barter extends StatelessWidget {
                         vertical: 2.0, horizontal: 16),
                     child: Text(
                         'Cambio de colección de libros de literatura clásica como son libroA, libroB, libroC, libroD, edición especial del libro E y llapa impreso la edicon limtitada del libro D',
-                        style: TextStyle(color: teal)),
+                        style: TextStyle(color: AppColor.teal)),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: 2.0, horizontal: 16),
                     child: Text(
                       'Busco: Eventos Y Actividades Al Aire Libre, Libros, Formación …',
-                      style: TextStyle(color: tealOscuro),
+                      style: TextStyle(color: AppColor.tealOscuro),
                     ),
                   ),
                 ],
@@ -84,8 +84,8 @@ class Barter extends StatelessWidget {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: tealClaro,
-          foregroundColor: blanco,
+          backgroundColor: AppColor.tealClaro,
+          foregroundColor: AppColor.blanco,
           onPressed: () {
             // Respond to button press
           },

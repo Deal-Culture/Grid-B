@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "980031758615",
+    "firebase_url": "https://dealapp-88bb9.firebaseio.com",
+    "project_id": "dealapp-88bb9",
+    "storage_bucket": "dealapp-88bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980031758615:android:63776d3d04820f97c01752",
+        "android_client_info": {
+          "package_name": "com.example.grid_b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980031758615-akdtllam5g750d4uu5srdd0n6hh7q2vp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grid_b",
+            "certificate_hash": "abe5522380abf55789e50b2d8461c0568c6c1ee8"
+          }
+        },
+        {
+          "client_id": "980031758615-mq0nsacf90vhvaqu4jn87p1l697u13ij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9IxG5Q5dQfUhoQpLsIjuq5aooJkamu4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980031758615-mq0nsacf90vhvaqu4jn87p1l697u13ij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

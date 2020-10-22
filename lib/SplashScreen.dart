@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:grid_b/InitialPage.dart';
 import 'dart:async';
-
 import 'componentes/colors.dart';
+import 'login2.dart';
 
 class SpalashScreen extends StatefulWidget {
   @override
@@ -15,7 +14,7 @@ class _SpalashScreenState extends State<SpalashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: tealOscuro,
+        color: AppColor.tealOscuro,
         alignment: Alignment.center,
         child: Stack(fit: StackFit.expand, children: <Widget>[
           SvgPicture.asset(
@@ -35,7 +34,7 @@ class _SpalashScreenState extends State<SpalashScreen> {
 
   void _navigationToInitialPage() {
     Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (BuildContext context) => InitialPage()));
+        MaterialPageRoute(builder: (BuildContext context) => Login2()));
   }
 
   @override

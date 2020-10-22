@@ -1,3 +1,6 @@
+import 'package:grid_b/login/login_state.dart';
+import 'package:provider/provider.dart';
+
 import 'componentes/MyDrawer.dart';
 import 'componentes/colors.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +13,10 @@ import 'grid.dart';
 
 class InitialPage extends StatelessWidget {
   final appTitle = 'Grid B';
+
+  static MaterialPageRoute get route => MaterialPageRoute(
+        builder: (context) => InitialPage(),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -40,15 +47,15 @@ ThemeData _titulos() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _dealColorScheme,
-    accentColor: teal,
-    primaryColor: blanco,
-    secondaryHeaderColor: tealOscuro,
-    canvasColor: blanco,
-    buttonColor: tealOscuro,
-    scaffoldBackgroundColor: tealBlanco,
-    cardColor: teal,
-    textSelectionColor: tealBlanco,
-    errorColor: errorColor,
+    accentColor: AppColor.teal,
+    primaryColor: AppColor.blanco,
+    secondaryHeaderColor: AppColor.tealOscuro,
+    canvasColor: AppColor.blanco,
+    buttonColor: AppColor.tealOscuro,
+    scaffoldBackgroundColor: AppColor.tealBlanco,
+    cardColor: AppColor.teal,
+    textSelectionColor: AppColor.tealBlanco,
+    errorColor: AppColor.errorColor,
     buttonTheme: const ButtonThemeData(
       colorScheme: _dealColorScheme,
       textTheme: ButtonTextTheme.normal,
@@ -62,11 +69,11 @@ ThemeData _titulos() {
 }
 
 IconThemeData _customIconTheme1(IconThemeData original) {
-  return original.copyWith(color: teal);
+  return original.copyWith(color: AppColor.teal);
 }
 
 IconThemeData _customIconTheme2(IconThemeData original) {
-  return original.copyWith(color: teal);
+  return original.copyWith(color: AppColor.teal);
 }
 
 TextTheme _customTextTheme1(TextTheme base) {
@@ -85,8 +92,8 @@ TextTheme _customTextTheme1(TextTheme base) {
       )
       .apply(
         fontFamily: 'Jura',
-        displayColor: teal,
-        bodyColor: teal,
+        displayColor: AppColor.teal,
+        bodyColor: AppColor.teal,
       );
 }
 
@@ -106,8 +113,8 @@ TextTheme _customTextTheme2(TextTheme base) {
       )
       .apply(
         fontFamily: 'Sans',
-        displayColor: tealClaro,
-        bodyColor: tealClaro,
+        displayColor: AppColor.tealClaro,
+        bodyColor: AppColor.tealClaro,
       );
 }
 
@@ -127,24 +134,24 @@ TextTheme _customTextTheme3(TextTheme base) {
       )
       .apply(
         fontFamily: 'Roboto',
-        displayColor: tealOscuro,
-        bodyColor: tealOscuro,
+        displayColor: AppColor.tealOscuro,
+        bodyColor: AppColor.tealOscuro,
       );
 }
 
 const ColorScheme _dealColorScheme = ColorScheme(
-  primary: blanco,
-  primaryVariant: teal,
-  secondary: tealBlanco,
-  secondaryVariant: tealOscuro,
-  surface: tealOscuro,
-  background: tealOscuro,
-  error: errorColor,
-  onPrimary: teal,
-  onSecondary: teal,
-  onSurface: teal,
-  onBackground: teal,
-  onError: plomo,
+  primary: AppColor.blanco,
+  primaryVariant: AppColor.teal,
+  secondary: AppColor.tealBlanco,
+  secondaryVariant: AppColor.tealOscuro,
+  surface: AppColor.tealOscuro,
+  background: AppColor.tealOscuro,
+  error: AppColor.errorColor,
+  onPrimary: AppColor.teal,
+  onSecondary: AppColor.teal,
+  onSurface: AppColor.teal,
+  onBackground: AppColor.teal,
+  onError: AppColor.plomo,
   brightness: Brightness.dark,
 );
 
